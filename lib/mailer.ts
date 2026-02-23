@@ -9,7 +9,7 @@ interface EmailData {
 const transporter = nodemailer.createTransport({
   host: process.env.SMTP_HOST || 'localhost',
   port: Number(process.env.SMTP_PORT) || 1025,
-  secure: false, // MailHog nepoužívá SSL/TLS
+  secure: false,
   auth: process.env.SMTP_USER
     ? {
         user: process.env.SMTP_USER,
@@ -37,7 +37,6 @@ export async function sendContactEmails(data: EmailData) {
     text: `Dobrý den ${name},\n\nDěkujeme za kontaktování společnosti KMWS s. r. o.\nVaše zpráva byla přijata.\n\nZnění:\n${message}\n\nS pozdravem,\nKMWS tým`,
   };
 
-  // Odeslání obou e-mailů
   await transporter.sendMail(emailToCompany);
   await transporter.sendMail(emailToSender);
 }
