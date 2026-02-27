@@ -20,8 +20,8 @@ export default function GDPRPage() {
           <h2>1. Správce osobních údajů</h2>
           <p>
             Správcem vašich osobních údajů je společnost <strong>KMWS s. r. o.</strong>, se sídlem
-            [adresa], IČ: [IČO], zapsaná v obchodním rejstříku vedeném [Městským soudem v Praze],
-            oddíl [C], vložka [číslo].
+            Línská 548/6, IČ: 19603762, zapsaná v obchodním rejstříku vedeném Krajským soudem v Plzni,
+            oddíl C, vložka 44110.
           </p>
           <p>
             Kontakt na správce: <strong>info@kmws.cz</strong>

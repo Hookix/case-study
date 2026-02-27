@@ -49,7 +49,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="/terms" className={styles.link}>
+                <a href="/obchodni-podminky" className={styles.link}>
                   Obchodní podmínky
                 </a>
               </li>
